@@ -28,4 +28,4 @@ jobs:
 
     - name: Deploy to EKS
       run: |
-        kubectl apply -f react-express-mongodb/reactdeploy_eks.yaml
+        kubectl apply -f bitirmeodevi/react-express-mongodb/reactdeploy_eks.yaml

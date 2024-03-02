@@ -26,6 +26,11 @@ jobs:
         aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws configure set default.region ${{ secrets.AWS_DEFAULT_REGION }}
 
+    - name: Config kubectl
+      run: |
+        aws eks --region ${{ secrets.AWS_DEFAULT_REGION }} update-kubeconfig --name ${{ secrets.EKS_CLUSTER_NAME }}
+           
+  
     - name: List working directory contents
       run: |
           pwd

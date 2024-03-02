@@ -31,6 +31,6 @@ jobs:
           pwd
           ls -la
 
-#    - name: Deploy to EKS
-#      run: |
-#        kubectl apply -f bitirmeodevi/react-express-mongodb/reactdeploy_eks.yaml
+    - name: Deploy to EKS
+      run: |
+        kubectl apply -f /home/runner/work/bitirmeodevi/bitirmeodevi/react-express-mongodb/reactdeploy_eks.yaml

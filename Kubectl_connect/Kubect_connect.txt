@@ -1,1 +1,1 @@
-aws eks update-kubeconfig --region eu-west-2 --name Cetin-eks-cluster-mOowFBnu
+aws eks update-kubeconfig --region eu-west-2 --name cetin-eks-cluster
